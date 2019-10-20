@@ -11,7 +11,6 @@ $(document).ready(function(){
 		e.preventDefault();
 
 		var href = $(this).attr("href");
-		
 		pokemon.getContentPokedex(href);
 
 	});
@@ -194,8 +193,6 @@ var pokemon = {
 		var src = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/"+ans+".png";
 		return src;	
 	},
-
-
 }
 
 
