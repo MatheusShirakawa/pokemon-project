@@ -1,0 +1,108 @@
+
+#slider-pokemon{
+	position: relative;
+}
+
+.nav li:first-child{
+	border-bottom-left-radius: 10px;
+}
+
+.nav li:last-child{
+	border-bottom-right-radius: 10px;
+}
+
+.block-svg{
+	width: 100px;
+    display: flex;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.prev{
+	left: 30px;
+}
+
+.next{
+	right: 30px;
+}
+
+#slider-pokemon:hover .arrow{
+	visibility: visible;
+	opacity: 0.6;
+}
+
+#slider-pokemon:hover .arrow:hover{
+	opacity: 1;
+}
+
+.arrow{
+	opacity: 0;
+	visibility: hidden;
+	cursor: pointer;
+	position: absolute;
+	transition: ease-out .2s;
+	top: 0;
+	z-index: 5;
+	height: 92px;
+	width: 76px;
+	border-radius: 10px;
+	/*padding:0px 5px;*/
+	bottom: 0;
+	margin:auto;
+	display: block
+
+}
+
+.arrow svg{
+	fill:#fff;
+	width: 45px;
+	display: block;
+	height: 45px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right:0;
+	margin: auto;
+}
+
+.item {
+	position: relative;
+}
+
+
+#slider-pokemon .item > .number ,
+.item .block > .number {
+	position: absolute;
+	height: 180px;
+	font-size:130px;
+	/*z-index: -1;*/
+	text-align: center;
+	opacity: 0.2;
+	display: block;
+	text-transform: uppercase;
+	color:#343a40;
+}
+
+#slider-pokemon .item .info .row:last-child{
+	transition: ease-out .2s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#slider-pokemon .item:hover .info .row:last-child{
+	opacity: 1;
+	visibility: visible;
+}
+
+
+
+
+
+
+
+
+

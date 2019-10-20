@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Pokemon Home</title>
+  </head>
+  <body>
+        <div class="wrapper">
+            <div class="barra-topo mb-4 shadow-lg">
+                <div class="container">
+                    <div class="barra-topo-content ">
+                        <div class="row">
+                            <div class="col-sm shadow-lg p-1 bg-white rounded d-flex align-items-center justify-content-center">
+                                <a href="#" class="">
+                                    <img src="img/logo-pokemon-79x45.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm shadow-lg p-1 bg-white rounded d-flex align-items-center justify-content-center">
+                                <a href="#">
+                                    <img src="img/logo-pgl-79x45.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm shadow-lg p-1 bg-white rounded d-flex align-items-center justify-content-center">
+                                <a href="#">
+                                    <img src="img/logo-tcgo-79x45.png" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm shadow-lg p-1 bg-white rounded d-flex align-items-center justify-content-center">
+                                <a href="#">
+                                    <img src="img/lets-go-pikachu-eevee-gus-large-en.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm shadow-lg p-1 bg-white rounded d-flex align-items-center justify-content-center">
+                                <a href="#">
+                                    <img src="img/pokken-tournament-dx-237x80.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-sm shadow-lg p-1 bg-white rounded d-flex align-items-center justify-content-center">
+                                <a href="#">
+                                    <img src="img/sm115-promo-gus-237x80-pt.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-content mb-5">
+                <div class="container">
+                    <ul class="nav">
+                        <li class="nav-item bg-secondary">
+                            <a class="nav-link active text-white text-center" href="index.html">
+                                <div class="block-svg">
+                                    <svg width="50px" height="50px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#home-icon"></use></svg>
+                                </div>
+                                <span class="d-block">Pagina inicial</span>
+                            </a>
+                        </li>
+                        <li class="nav-item bg-dark border-bottom border-danger border-6">
+                            <a class="nav-link text-danger text-center" href="pokedex.html">
+                                <div class="block-svg">
+                                    <svg width="50px" height="50px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#pokebola-icon"></use></svg>
+                                </div>
+                                <span class="d-block text-white">Pokédex</span>
+                            </a>
+                        </li>
+                        <li class="nav-item bg-dark border-bottom border-secondary border-6">
+                            <a class="nav-link text-secondary text-center " href="#">
+                                <div class="block-svg">
+                                    <svg width="50px" height="50px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#mobile-icon"></use></svg>
+                                </div>
+                                <span class="d-block text-white">Aplicativos Móveis</span>
+                            </a>
+                        </li>
+                        <li class="nav-item bg-dark border-bottom border-warning border-6">
+                            <a class="nav-link text-warning text-center" href="#">
+                                <div class="block-svg">
+                                    <svg width="50px" height="50px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#tv-icon"></use></svg>    
+                                </div>
+                                <span class="d-block text-white">TV Pokémon</span>
+                            </a>
+                        </li>
+                        <li class="nav-item bg-dark text-center border-bottom border-success border-6">
+                            <a class="nav-link text-success " href="#">
+                                <img src="img/pgl_logo.png">
+                                <span class="d-block text-white">Pokemon Global Link</span>
+                            </a>
+                        </li>
+                        <li class="nav-item text-white bg-dark border-bottom border-primary border-6">
+                            <a class="nav-link text-white text-center" href="#">
+                                <img src="img/tcgo_logo.png">
+                                <span class="d-block">Estampas Ilustradas Online</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>      
+            </div>
+
+
+            <div class="main-content">
+                
+                <div class="busca bg-dark p-3">
+                    <div class="container">
+                        <h1 class="text-white mb-3">Pokedéx</h1>
+
+                        <div class="row align-items-center">
+                            <div class="col-sm-6">
+                                <form id="search-pokemon" method="post">
+                                    
+                                    <div class="row">
+                                        <div class="form-group col-sm-10">
+                                            <label class="text-white col-sm-12 p-0"> Nome ou Número</label>
+                                            <input class="form-control form-control-lg input-search " type="text" name="search">
+                                        </div>
+
+                                        <button class="btn btn-secondary col-sm-2" style="margin-top:30px;max-height: 50px;" ><svg class="text-white" width="35px" height="35px"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#search-icon"></use></svg></button>    
+                                    </div>
+                                    
+                                </form>
+
+                            </div>
+
+
+                            <div class="col-sm-6">
+                                <div class="card text-white bg-success mb-3">
+
+                                  <div class="card-body">
+                                    <h5 class="card-title">Realize a busca por Pokémon pelo nome ou usando o número do Pokédex Nacional.</h5>
+                                    <p class="card-text text-secondary">
+                                      <a href="/br/clube-de-treinadores-pokemon/login?_rd=/br/pokedex/">Acessar conta</a>
+                                      ou <a href="/br/clube-de-treinadores-pokemon/registro/">Registre-se</a> para começar hoje mesmo!
+                                    </p>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="loading"> 
+                    <div class="container">
+                        <div id="content-pokedex" class="row d-flex m-5"></div>
+
+                        <div class="text-center justify-content-center d-flex"><a href="" class="btn btn-secondary load-more">Carregar mais</a></div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <footer class="footer bg-dark p-5 mt-5">
+                <div class="container">
+                    <div class="row">
+                       <div class="col-sm-4">
+                            <h3 class="text-white mb-3">The Pokémon Company</h3>
+                            <ul class="list-group text-secondary font-weight-bold">
+                              <li class="list-group-item bg-dark">Novidades</li>
+                              <li class="list-group-item bg-dark">Guia Pokémon para pais</li>
+                              <li class="list-group-item bg-dark">Serviço ao consumidor</li>
+                              <li class="list-group-item bg-dark">Sobre nossa empresa</li>
+                              <li class="list-group-item bg-dark">Selecione um país ou região</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <h3 class="text-white mb-3">Siga-nos</h3>
+                            <ul class="list-group text-secondary font-weight-bold">
+                                
+                                <li class="list-group-item bg-dark">facebook</li>
+                                <li class="list-group-item bg-dark">insta</li>
+                                <li class="list-group-item bg-dark">twitter</li>
+                                <li class="list-group-item bg-dark">youtube</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <h3 class="text-white mb-3">Copyright</h3>
+                            <ul class="list-group text-secondary font-weight-bold">
+                                <li class="list-group-item bg-dark">Termos de Uso</li>
+                                <li class="list-group-item bg-dark">Aviso de Privacidade</li>
+                                <li class="list-group-item bg-dark">Informações legais</li>
+                                <li class="list-group-item bg-dark"> © 2019 Pokémon. TM, ® Nintendo.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+      </div>
+  </body>
+    <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/script.js"></script>
+</html>
