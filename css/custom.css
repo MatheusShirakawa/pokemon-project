@@ -73,6 +73,13 @@
 	position: relative;
 }
 
+.type{
+	font-size: 0;
+}
+
+.type .btn{
+	margin-right: 5px;
+}
 
 #slider-pokemon .item > .number ,
 .item .block > .number {

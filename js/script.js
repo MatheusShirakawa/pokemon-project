@@ -87,7 +87,7 @@ var pokemon = {
 
 		  },error:function (error){
 		  	console.log(error);
-		  	alert("Ocorreu um erro ao mostrar so pokemons");
+		  	alert("Ocorreu um erro ao mostrar os pokemons");
 		  }
 		});
 
@@ -120,23 +120,10 @@ var pokemon = {
 			e.preventDefault();
 
 			var param = $(".input-search").val();
-			var url = "https://pokeapi.co/api/v2/pokemon"+param;
-			pokemon.getInfoPokemon(url, "pokedex");
+			var url = "https://pokeapi.co/api/v2/pokemon/"+param;
 
-			// https://pokeapi.co/api/v2/pokemon
-			// $.ajax({
-			// 	method:"get",
-			// 	url: url,
-			// 	dataType:"json",
-			// 	success:function (response){
-
-
-
-
-			// 	},error:function (response){
-
-			// 	}
-			// });
+			$("#content-pokedex").html(' ');
+			pokemon.getPokemonItemPokedex(url, "pokedex");
 		});  
 	},
 	getContentPokedex:function(url = 'https://pokeapi.co/api/v2/pokemon'){
@@ -148,6 +135,7 @@ var pokemon = {
 		  success:function(response) {
 
 			$.each(response.results,function(i,v){
+				console.log(v.url);
 				pokemon.getPokemonItemPokedex(v.url, "pokedex");
 			}); 
 
@@ -186,12 +174,14 @@ var pokemon = {
                     </div>\
                  </div>' ;
 
+                 // console.log(response.id);
+
                 $("#content-pokedex").append(pokemonItem);
              
 
 		  },error:function (error){
 		  	console.log(error);
-		  	alert("Ocorreu um erro ao mostrar so pokemons");
+		  	alert("Ocorreu um erro ao mostrar os pokemons :C");
 		  }
 		});
 	},
